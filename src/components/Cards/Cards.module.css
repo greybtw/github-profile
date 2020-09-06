@@ -56,6 +56,9 @@ a {
     position: absolute;
     right: 0;
 }
+.octicon {
+    transform: translateY(10%);
+}
 .language {
     display: inline-block;
     width: 10px;
