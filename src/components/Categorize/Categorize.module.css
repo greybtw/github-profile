@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    background:rgb(246, 248, 250);
+    padding: 25px 5%;
+}
+
+.text {
+    position: relative;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+.text::before {
+    content: '';
+    position: absolute;
+    width: 121px;
+    height: 10px;
+
+    bottom: 0;
+    left: 15px;
+
+    background: linear-gradient(90deg, rgb(209, 213, 218) 50%, rgba(255, 255, 255, 0) 0px);
+    background-repeat: repeat-x;
+    background-size: 15px 2px;
+}
+
+.text::after {
+    content: 'by';
+    right: -15px;
+    margin: 0 20px;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.select {
+    margin: 5px -15px !important;
+}

@@ -1,0 +1,128 @@
+.container {
+    width: 100%;
+    background: rgb(26, 30, 34);
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 640px;
+}
+
+.avatar {
+    width: 140px !important;
+    height: 140px !important;
+    border: 0.4rem solid rgb(0, 112, 243);
+    margin-top: 20px;
+}
+
+.username {
+    padding: 10px;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: -5px;
+}
+
+a {
+    text-decoration-color: rgb(0, 112, 243);    
+    color: rgb(0, 112, 243);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    margin: 15px 0 60px 0;
+}
+
+.status__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 5px;
+    background-color: rgb(36, 41, 46);
+    padding: 25px;
+    border-radius: 0.25rem;
+}
+
+.num {
+    color: rgb(246, 248, 250);
+    font-size: 1.5rem;
+}
+
+.label {
+    color: rgba(200, 225, 255, 0.7);
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+
+.info {
+    margin: 15px 0;
+}
+.info__item {
+    margin: 16px;
+}
+
+.octicon {
+    fill: #fff; 
+    margin-right: 8px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .username {
+        font-size: 2rem;
+    }
+    a {
+        font-size: 1.25rem;
+    }
+    .info {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .octicon {
+        width: 25px;
+        height: 25px;
+    }
+    .status__item {
+        padding: 16px 20px;
+    }
+    .info__item {
+        margin: 5px;
+    }
+    .num {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .avatar {
+        width: 160px !important;
+        height: 160px !important;
+    }
+    .username {
+        font-weight: 600;
+    }
+    .info__item {
+        font-size: 1.1rem;
+    }
+    .label {
+        font-size: 1rem;
+    }
+    .status__item {
+        padding: 15px 35px;
+        margin: 8px;
+    }
+}

@@ -1,0 +1,50 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    
+    transform: translateY(-25%);
+}
+
+.octicon {
+    fill: #fff;
+}
+
+.wrapper label {
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 25px 0;
+}
+
+.wrapper input {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 0.25rem;
+    font-weight: 400;
+    text-align: center;
+    outline: none;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    padding: 1rem;
+    font-size: 2rem;
+
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper svg {
+        width: 70px;
+        height: 70px;
+    }
+    .wrapper label {
+        font-size: 1.5rem;
+    }
+    .wrapper input {
+        max-width: 300px;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+}
