@@ -17,15 +17,13 @@ class App extends React.Component {
 
     handleRequest = async (username) => {
         const fetchedData = await fetchData(username);
-        // console.log(fetchedData);
-
+        
         if(fetchedData.status === 200) {
             const fetchedRepos = await fetchRepos(username);
             this.setState({ info: fetchedData, searching: false, repos: fetchedRepos});
 
             const fetchedListRepo = await fetchReposFromOption(this.state.repos, this.state.option);
             this.setState({ listRepos: fetchedListRepo });
-            // console.log(this.state);
         }
         else {
             this.setState({info: { message: "Not Found"}, searching: true})
@@ -36,12 +34,10 @@ class App extends React.Component {
     handleOptionChange = async (value) => {
         const fetchedRepo = await fetchReposFromOption(this.state.repos, value);
         this.setState({ option: value, listRepos: fetchedRepo });
-        console.log(this.state);
     }
 
     render() {
         const data  = this.state;
-        // console.log(data);
         return (
             data.searching ? (
                     <div className={ styles.wrapper }>
