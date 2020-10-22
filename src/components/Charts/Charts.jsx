@@ -100,7 +100,6 @@ const Charts = ({ repos }) => {
     const langChartError = (dataTopLanguages && dataTopLanguages.datasets[0].data[0] > 0);
     const starChartError = (dataStarLanguages && dataStarLanguages.datasets[0].data[0] > 0);
     const thirdChartError = (dataMostStarRepo && dataMostStarRepo.datasets[0].data[0] > 0);
-    console.log(dataStarLanguages.datasets[0]);
 
     return( 
         <div className={styles.containter}>
