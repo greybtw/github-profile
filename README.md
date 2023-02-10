@@ -1,5 +1,5 @@
 <div align="center">
-   Direct to <a href="https://grey-btw.github.io/github-profile/">Github Profile</a>.
+   Direct to <a href="https://greybtw.github.io/github-profile/">Github Profile</a>.
 </div>
 
 ## Github Profile
